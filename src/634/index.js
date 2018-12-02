@@ -1,6 +1,6 @@
 /**
  * Define F(n) to be the number of integers x≤n that can be written in the form x = a^2 * b^3, where a and b are integers not necessarily different and both greater than 1.
- * @param {Number} n Max Value
+ * @param {number} n - Max Value
  * @return {number} F(n)
  */
 function Problem634(n) {
@@ -23,8 +23,8 @@ function Problem634(n) {
 
 /**
  * Count max. possible solutions for a in a^2 * b^3 ≤ n with given b
- * @param {Number} b
- * @param {Number} n
+ * @param {number} b
+ * @param {number} n
  * @returns {Number} Max solutions for a in a^2 * b^3 ≤ n with given b
  */
 function countASolutions(b, n) {
@@ -37,9 +37,9 @@ function countASolutions(b, n) {
 
 /**
  * Calculate x = a^2 * b^3
- * @param {Number} a
- * @param {Number} b
- * @returns {Number} x
+ * @param {number} a
+ * @param {number} b
+ * @returns {number} x
  */
 function x(a, b) {
     return Math.pow(a, 2) * Math.pow(b, 3);
