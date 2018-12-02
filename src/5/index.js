@@ -21,7 +21,7 @@ function problem5(maxDivisor) {
         solution = fac * maxOddDivisor;
 
         // Fast check
-        if (solution % 5 !== 0) {
+        if (maxDivisor >= 5 && solution % 5 !== 0) {
             continue;
         }
 
