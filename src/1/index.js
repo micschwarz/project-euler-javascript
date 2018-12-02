@@ -3,7 +3,7 @@
  * @param {number} max - Max. multiplier
  * @return {number} sum of all the multiples of 3 or 5 below n
  */
-function Problem1(max) {
+function problem1(max) {
     let sum = 0;
 
     for (let i = 1; i < max/3; i++) {
@@ -27,7 +27,7 @@ function isMultipleOf5Allowed(multiplication, max) {
 }
 
 const time = process.hrtime();
-const solution = Problem1(1000-1);
+const solution = problem1(1000-1);
 const duration = process.hrtime(time);
 
 console.log(`Solution ${solution} found in ${duration[0]}s and ${duration[1]}ns`);

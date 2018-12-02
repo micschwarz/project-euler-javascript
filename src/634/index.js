@@ -3,7 +3,7 @@
  * @param {number} n - Max Value
  * @return {number} F(n)
  */
-function Problem634(n) {
+function problem634(n) {
     const maxB = Math.floor(Math.pow((n / 4), 1/3));
     let b = 2;
     let solutions = 0;
@@ -48,7 +48,7 @@ function x(a, b) {
 
 const time = process.hrtime();
 /*const solutions = Problem634(9*Math.pow(10,18));*/
-const solutions = Problem634(3000000);
+const solutions = problem634(3000000);
 const duration = process.hrtime(time);
 
 console.log(`Found possible ${solutions} in ${duration[0]}s and ${duration[1]}ns`);
