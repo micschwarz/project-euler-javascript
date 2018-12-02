@@ -48,8 +48,9 @@ function x(a, b) {
 
 const time = process.hrtime();
 /*const solutions = Problem634(9*Math.pow(10,18));*/
-const solutions = problem634(3000000);
+const solution = problem634(3000000);
 const duration = process.hrtime(time);
 
-console.log(`Found possible ${solutions} in ${duration[0]}s and ${duration[1]}ns`);
+console.log(`Solution: ${solution}`);
+console.log(`Exec-Time: ${duration[0] * 1e9 + duration[1]}ns`);
 

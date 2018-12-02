@@ -30,4 +30,5 @@ const time = process.hrtime();
 const solution = problem1(1000-1);
 const duration = process.hrtime(time);
 
-console.log(`Solution ${solution} found in ${duration[0]}s and ${duration[1]}ns`);
+console.log(`Solution: ${solution}`);
+console.log(`Exec-Time: ${duration[0] * 1e9 + duration[1]}ns`);
