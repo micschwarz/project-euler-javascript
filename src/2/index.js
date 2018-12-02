@@ -1,3 +1,8 @@
+/**
+ * Calculate the sum of the even fibonacci-numbers up to maxFib
+ * @param {number} maxFib - Max. Number has to be in
+ * @returns {number} sum of the even fibonacci-numbers up to maxFib
+ */
 function problem2(maxFib) {
     let fib = [1, 1];
     let sum = 0;
