@@ -1,6 +1,6 @@
 /**
  * Calculates the sum of all the multiples of 3 or 5 below n
- * @param {number} max - Max. multiplier (not included)
+ * @param {number} max - Max. multiplier
  * @return {number} sum of all the multiples of 3 or 5 below n
  */
 function Problem1(max) {
@@ -27,7 +27,7 @@ function isMultipleOf5Allowed(multiplication, max) {
 }
 
 const time = process.hrtime();
-const solution = Problem1(1000);
+const solution = Problem1(1000-1);
 const duration = process.hrtime(time);
 
 console.log(`Solution ${solution} found in ${duration[0]}s and ${duration[1]}ns`);
