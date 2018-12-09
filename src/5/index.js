@@ -13,11 +13,9 @@
 function problem5(maxDivisor) {
     const maxOddDivisor = maxDivisor % 2 === 0 ? maxDivisor - 1 : maxDivisor;
 
-    let solution = maxOddDivisor;
+    let solution;
 
-    let evenlyDivisible = false;
-
-    for (let fac = 2; !evenlyDivisible; fac += 2) {
+    for (let fac = 2; true; fac += 2) {
         solution = fac * maxOddDivisor;
 
         // Fast check
